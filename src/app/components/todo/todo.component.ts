@@ -20,5 +20,10 @@ todo: Todo[];
     this.todo = this.todo.filter(t => t.id !== todo.id);
     this.todoService.deleteTodo(todo).subscribe();
   }
+  addTodo(todo: Todo) {
+    this.todoService.addTodo(todo).subscribe(todo => {
+      this.todo.push(todo);
+    });
+  }
 
 }
