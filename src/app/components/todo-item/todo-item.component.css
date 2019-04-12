@@ -2,14 +2,15 @@
     background: red;
     color: white;
     border: none;
+    padding: 5px 9px;
     border-radius: 50%;
     cursor: pointer;
     float: right
 }
 .todo{
-    background: white;
+    background: lightgray;
     padding: 10;
-    border-bottom: 1 white dotted;
+    border-bottom: 2px #ccc dotted;
 }
 .is-complete{
     text-decoration: line-through;
